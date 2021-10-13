@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Parisienne&display=swap');
+
+h1 {
+    font-family: 'Parisienne', cursive;
+}
+
+.container {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    -webkit-text-fill-color: black; /* Will override color (regardless of order) */
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: white;
+    font-family: 'Parisienne', cursive;
+    font-size: 100px;
+}
+
+
+@media (max-width:900px) { 
+    .centered {
+        font-size: 50px;
+    }
+}
